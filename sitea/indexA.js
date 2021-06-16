@@ -10,6 +10,13 @@ app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname + '/indexA.html'));
 });
 
+app.get("/jsonp", (req, res) => {
+    res.sendFile(path.join(__dirname, '/jsonp.html'));
+});
+
+app.get("/form",(req, res) => {
+    res.sendFile(path.join(__dirname, '/form.html'));
+});
 app.listen(4000, () => {
     console.log("listening on port 4000...");
 });

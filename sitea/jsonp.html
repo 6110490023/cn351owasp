@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>JSONP Test Page</h1>
+
+    <h2 id='demo'></h2>
+
+    <script>
+        function process(input) {
+            window.demo.innerHTML = input;
+        }
+    </script>
+
+    <script src="http://localhost:5000/getdata"></script>
+
+    <hr>
+    <address></address>
+    <!-- hhmts start -->Last modified: <span id="last"></span><!-- hhmts end -->
+    <script>
+        var x = new Date(document.lastModified);
+        document.getElementById("last").innerHTML = x;
+    </script>
+</body>
+</html>
